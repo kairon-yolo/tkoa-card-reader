@@ -28,3 +28,5 @@ py -3.12 cardno2json.py
 
 🟦 Step 10: 
 py -3.12 viewer.py
+
+Few fee to let me know any opportunity to work together make better
