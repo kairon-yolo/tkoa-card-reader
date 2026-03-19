@@ -9,8 +9,39 @@ from io import BytesIO
 import ttkbootstrap as tb
 from ttkbootstrap.constants import *
 import re
+from tkinter import filedialog, messagebox
+import shutil
 
 JSON_FILE = "merged-links-updated.json"
+
+def load_json_with_fallback(json_file):
+    first_load = False
+
+    # 如果檔案已存在 → 直接載入
+    if os.path.exists(json_file):
+        with open(json_file, "r", encoding="utf-8") as f:
+            return json.load(f), first_load
+
+    # 找不到 → 要求使用者選檔
+    messagebox.showwarning("找不到檔案", f"找不到 {json_file}，請選擇 JSON 檔案")
+
+    file_path = filedialog.askopenfilename(
+        title="請選擇 JSON 檔案",
+        filetypes=[("JSON files", "*.json"), ("All files", "*.*")]
+    )
+
+    if not file_path:
+        messagebox.showerror("錯誤", "未選擇檔案，無法繼續")
+        return None, first_load
+
+    # 複製到根目錄
+    shutil.copy(file_path, json_file)
+    first_load = True
+
+    with open(json_file, "r", encoding="utf-8") as f:
+        return json.load(f), first_load
+
+
 
 
 def html_to_text(html):
@@ -41,19 +72,26 @@ class CardViewer:
         self.root.title("tkoa Card Collector App")
         self.root.geometry("1260x620")
         self.root.state("zoomed")
-        
+
+        # 先載入 JSON
+        self.cards, first_load = load_json_with_fallback(JSON_FILE)
+        if self.cards is None:
+            return
+
+        # 如果是第一次載入 → 提示並關閉 App
+        if first_load:
+            messagebox.showinfo("完成", "資料已載入，請重新啟動 App")
+            self.root.destroy()
+            return
+
         tb.Style("litera")
 
-        with open(JSON_FILE, "r", encoding="utf-8") as f:
-            self.cards = json.load(f)
-
-        # ============================
         # grid 佈局
-        # ============================
-        root.grid_columnconfigure(0, weight=0)   # 左欄固定
-        root.grid_columnconfigure(1, weight=0)   # 中間欄固定
-        root.grid_columnconfigure(2, weight=1)   # 右欄可伸縮
+        root.grid_columnconfigure(0, weight=0)
+        root.grid_columnconfigure(1, weight=0)
+        root.grid_columnconfigure(2, weight=1)
         root.grid_rowconfigure(0, weight=1)
+
 
         # ============================
         # 左欄（固定寬度）
