@@ -1,3 +1,5 @@
+⚠️ For Research/Education Only / 研究・教育目的のみ — Do not use on third-party servers or in commercial environments. / 第三者サーバーや商用環境では使用しないでください。
+
 🟦 Step 1: Create a Dedicated Profile Create a folder in PowerShell: mkdir "C:\Users\XXXX\AppData\Local\Google\Chrome\AvalonProfile"
 
 🟦 Step 2: Manually Launch Chrome Using This Profile Run: "C:\Program Files\Google\Chrome\Application\chrome.exe" --user-data-dir="C:\Users\XXXX\AppData\Local\Google\Chrome\AvalonProfile" Chrome will open using this profile (it will be empty the first time).
