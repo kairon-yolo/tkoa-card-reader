@@ -1,65 +1,99 @@
 import json
+import os
 import tkinter as tk
 from tkinter import ttk
+from urllib.parse import urlparse
 from PIL import Image, ImageTk
 import requests
 from io import BytesIO
 import ttkbootstrap as tb
 from ttkbootstrap.constants import *
-from tkhtmlview import HTMLLabel
+import re
 
 JSON_FILE = "merged-links.json"
+
+
+def html_to_text(html):
+    """把簡單 HTML 轉成純文字"""
+    if not html:
+        return ""
+
+    html = html.replace("<br>", "\n").replace("<br/>", "\n")
+    html = re.sub(r"<.*?>", "", html)  # 移除所有 HTML tag
+    return html.strip()
+
+
+def parse_move_color(html):
+    """解析 <span style='color:#xxxxxx'>●●●</span>"""
+    # 抓顏色
+    m = re.search(r"color:\s*(#[0-9a-fA-F]{6})", html)
+    color = m.group(1) if m else "#ffffff"
+
+    # 抓文字（●●●）
+    text = re.sub(r"<.*?>", "", html)
+
+    return text, color
 
 
 class CardViewer:
     def __init__(self, root):
         self.root = root
         self.root.title("Avalon Card Viewer - Modern Edition")
-        self.root.geometry("1600x900")
+        self.root.geometry("1000x600")
 
-        tb.Style("darkly")
+        tb.Style("litera")
 
-        # 讀取 JSON
         with open(JSON_FILE, "r", encoding="utf-8") as f:
             self.cards = json.load(f)
 
         # ============================
-        # 左、中、右 三欄式布局
+        # grid 佈局
         # ============================
-        main_frame = ttk.Frame(root)
-        main_frame.pack(fill="both", expand=True)
+        root.grid_columnconfigure(0, weight=0)   # 左欄固定
+        root.grid_columnconfigure(1, weight=0)   # 中間欄固定
+        root.grid_columnconfigure(2, weight=1)   # 右欄可伸縮
+        root.grid_rowconfigure(0, weight=1)
 
-        # 左欄
-        left_frame = ttk.Frame(main_frame, width=250)
-        left_frame.pack(side="left", fill="y", padx=10, pady=10)
+        # ============================
+        # 左欄（固定寬度）
+        # ============================
+        left_frame = ttk.Frame(root, width=250)
+        left_frame.grid(row=0, column=0, sticky="ns", padx=10, pady=10)
+        left_frame.grid_propagate(False)
 
-        # 中欄（可捲動）
-        center_frame = ttk.Frame(main_frame)
-        center_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
+        # ============================
+        # 中間欄（固定寬度 400px）
+        # ============================
+        center_frame = ttk.Frame(root, width=400)
+        center_frame.grid(row=0, column=1, sticky="ns", padx=10, pady=10)
+        center_frame.grid_propagate(False)
 
-        # 右欄
-        right_frame = ttk.Frame(main_frame, width=350)
-        right_frame.pack(side="right", fill="y", padx=10, pady=10)
+        # ============================
+        # 右欄（可伸縮）
+        # ============================
+        right_frame = ttk.Frame(root)
+        right_frame.grid(row=0, column=2, sticky="nsew", padx=10, pady=10)
+        right_frame.grid_columnconfigure(0, weight=1)
 
         # ============================
         # 左欄內容
         # ============================
-        ttk.Label(left_frame, text="搜尋卡片名稱", font=("Arial", 12, "bold")).pack()
+        ttk.Label(left_frame, text="Search Card Name", font=("Arial", 12, "bold")).pack()
         self.search_var = tk.StringVar()
         self.search_var.trace("w", self.update_list)
         ttk.Entry(left_frame, textvariable=self.search_var, width=20).pack(pady=5)
 
-        ttk.Label(left_frame, text="屬性篩選", font=("Arial", 11, "bold")).pack(pady=5)
+        ttk.Label(left_frame, text="Attribute Filtering", font=("Arial", 11, "bold")).pack(pady=5)
         self.attr_var = tk.StringVar(value="全部")
         attrs = ["全部", "黄属性", "赤属性", "青属性", "緑属性"]
         ttk.OptionMenu(left_frame, self.attr_var, "全部", *attrs, command=lambda _: self.update_list()).pack()
 
-        ttk.Label(left_frame, text="種族篩選", font=("Arial", 11, "bold")).pack(pady=5)
+        ttk.Label(left_frame, text="Ethnicity Filtering", font=("Arial", 11, "bold")).pack(pady=5)
         self.race_var = tk.StringVar(value="全部")
         races = ["全部"] + sorted({c.get("race", "") for c in self.cards})
         ttk.OptionMenu(left_frame, self.race_var, "全部", *races, command=lambda _: self.update_list()).pack()
 
-        # 卡片列表 + scrollbar
+        # 卡片列表
         list_frame = ttk.Frame(left_frame)
         list_frame.pack(fill="y", pady=10)
 
@@ -72,68 +106,65 @@ class CardViewer:
         self.listbox.config(yscrollcommand=scrollbar.set)
 
         # ============================
-        # 中欄內容（可捲動）
+        # 中間欄內容（圖片區）
         # ============================
-        center_canvas = tk.Canvas(center_frame)
-        center_scrollbar = ttk.Scrollbar(center_frame, orient="vertical", command=center_canvas.yview)
-        center_scrollbar.pack(side="right", fill="y")
+        self.image_label = ttk.Label(
+            center_frame,
+            text="（無圖片）",
+            anchor="center",
+            width=360,
+            background="#FFFFFF",
+            foreground="white",
+            font=("Arial", 14)
+        )
+        self.image_label.pack(pady=10, ipady=200)  # 固定高度
 
-        center_canvas.pack(side="left", fill="both", expand=True)
-        center_canvas.configure(yscrollcommand=center_scrollbar.set)
-
-        self.center_inner = ttk.Frame(center_canvas)
-        center_canvas.create_window((0, 0), window=self.center_inner, anchor="nw")
-
-        # scrollregion 自動更新
-        def update_scrollregion(event=None):
-            center_canvas.configure(scrollregion=center_canvas.bbox("all"))
-
-        self.center_inner.bind("<Configure>", update_scrollregion)
-        center_canvas.bind("<Configure>", update_scrollregion)
-
-        # ============================
-        # 中欄內容元件（會依內容自動伸展）
-        # ============================
-        self.title_label = ttk.Label(self.center_inner, text="", font=("Arial", 22, "bold"))
-        self.title_label.pack(pady=10)
-
-        self.attr_label = ttk.Label(self.center_inner, text="", font=("Arial", 14, "bold"))
-        self.attr_label.pack()
-
-        ttk.Label(self.center_inner, text="基本資料 Info", font=("Arial", 14, "bold")).pack(pady=5)
-        self.info_html = HTMLLabel(self.center_inner, html="")
-        self.info_html.pack(pady=5, fill="x", anchor="w")
-
-        ttk.Label(self.center_inner, text="能力 Ability", font=("Arial", 14, "bold")).pack(pady=5)
-        self.ability_html = HTMLLabel(self.center_inner, html="")
-        self.ability_html.pack(pady=5, fill="x", anchor="w")
-
-        ttk.Label(self.center_inner, text="卡片說明 Description", font=("Arial", 14, "bold")).pack(pady=5)
-        self.desc_html = HTMLLabel(self.center_inner, html="")
-        self.desc_html.pack(pady=5, fill="x", anchor="w")
-
-        # ============================
-        # 右欄內容（圖片）
-        # ============================
-        self.image_label = ttk.Label(right_frame)
-        self.image_label.pack(pady=10)
-
-        self.image_buttons_frame = ttk.Frame(right_frame)
+        self.image_buttons_frame = ttk.Frame(center_frame)
         self.image_buttons_frame.pack()
 
-        # 初始化列表
+        # ============================
+        # 右欄內容（文字區）
+        # ============================
+        self.title_label = ttk.Label(right_frame, text="", font=("Arial", 22, "bold"))
+        self.title_label.pack(pady=10, anchor="w")
+
+        self.attr_label = ttk.Label(right_frame, text="", font=("Arial", 14, "bold"))
+        self.attr_label.pack(anchor="w")
+
+        ttk.Label(right_frame, text="Info", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
+        self.info_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12))
+        self.info_text.pack(fill="x")
+
+        ttk.Label(right_frame, text="Ability", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
+        self.ability_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12))
+        self.ability_text.pack(fill="x")
+
+        ttk.Label(right_frame, text="Description", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
+        self.desc_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12))
+        self.desc_text.pack(fill="both", expand=True)
+
+        # 自動換行
+        self.root.bind("<Configure>", self.resize_text_wrap)
+
         self.update_list()
 
     # ============================
-    # HTMLLabel 自動縮小補丁
+    # 自動縮小 Text widget 高度
     # ============================
-    def shrink_html_label(self, html_label):
-        html_label.update_idletasks()
-        # 找到 Text widget
-        for child in html_label.children.values():
-            if isinstance(child, tk.Text):
-                lines = int(child.index("end-1c").split(".")[0])
-                child.configure(height=lines)
+    def shrink_text(self, text_widget):
+        text_widget.update_idletasks()
+        lines = int(text_widget.index("end-1c").split(".")[0])
+        text_widget.configure(height=max(1, lines))
+
+    # ============================
+    # 右欄自動換行
+    # ============================
+    def resize_text_wrap(self, event=None):
+        width = self.desc_text.winfo_width()
+        if width > 50:
+            wrap = width - 20
+            for t in [self.info_text, self.ability_text, self.desc_text]:
+                t.configure(wrap="word", wraplength=wrap)
 
     # ============================
     # 搜尋 + 篩選
@@ -172,33 +203,43 @@ class CardViewer:
         self.show_attribute_badge(card.get("attribute"))
 
         # 基本資料
+        self.info_text.delete("1.0", "end")
         info = ""
-        if "series" in card:
-            info += f"<b>系列：</b> {card['series']}<br/>"
-        if "attack" in card:
-            info += f"<b>攻撃：</b> {card['attack']}<br/>"
-        if "hp" in card:
-            info += f"<b>耐久：</b> {card['hp']}<br/>"
-        if "rare" in card:
-            info += f"<b>レア：</b> {card['rare']}<br/>"
-        if "race" in card:
-            info += f"<b>種族：</b> {card['race']}<br/>"
-        if "move_color" in card:
-            move_html = card["move_color"].replace("<span", "<span style='font-size:20px;'")
-            info += f"<b>移動色：</b> {move_html}<br/>"
 
-        self.info_html.set_html(info)
-        self.shrink_html_label(self.info_html)
+        if "series" in card:
+            info += f"系列：{card['series']}\n"
+        if "attack" in card:
+            info += f"攻撃：{card['attack']}\n"
+        if "hp" in card:
+            info += f"耐久：{card['hp']}\n"
+        if "rare" in card:
+            info += f"レア：{card['rare']}\n"
+        if "race" in card:
+            info += f"種族：{card['race']}\n"
+
+        self.info_text.insert("1.0", info)
+
+        # ⭐ 移動色（彩色圓點）
+        move_raw = card.get("move_color", "")
+        move_text, move_color = parse_move_color(move_raw)
+
+        self.info_text.insert("end", "移動色：")
+        self.info_text.insert("end", move_text + "\n", ("move_color",))
+        self.info_text.tag_config("move_color", foreground=move_color)
+
+        self.shrink_text(self.info_text)
 
         # 能力
-        ability_html = card.get("ability_html", "").replace("<br>", "<br/>")
-        self.ability_html.set_html(ability_html)
-        self.shrink_html_label(self.ability_html)
+        ability = html_to_text(card.get("ability_html", ""))
+        self.ability_text.delete("1.0", "end")
+        self.ability_text.insert("1.0", ability)
+        self.shrink_text(self.ability_text)
 
         # 說明
-        desc_html = card.get("description_html", "").replace("<br>", "<br/>")
-        self.desc_html.set_html(desc_html)
-        self.shrink_html_label(self.desc_html)
+        desc = html_to_text(card.get("description_html", ""))
+        self.desc_text.delete("1.0", "end")
+        self.desc_text.insert("1.0", desc)
+        self.shrink_text(self.desc_text)
 
         # 圖片
         self.show_images(card)
@@ -217,7 +258,7 @@ class CardViewer:
         self.attr_label.config(text=attr, background=color, foreground="black")
 
     # ============================
-    # 顯示圖片
+    # 顯示圖片（本地優先）
     # ============================
     def show_images(self, card):
         for widget in self.image_buttons_frame.winfo_children():
@@ -233,33 +274,55 @@ class CardViewer:
                 if "original" in imgset:
                     self.current_images.append(imgset["original"])
 
-        if self.current_images:
-            self.load_image(self.current_images[0])
+        # 沒有圖片 → 顯示 placeholder
+        if not self.current_images:
+            self.image_label.config(
+                image="",
+                text="（無圖片）",
+                background="#333333",
+                foreground="white"
+            )
+            return
 
+        # 有圖片 → 顯示第一張
+        self.load_image(self.current_images[0])
+
+        # 建立切換按鈕
         for i, url in enumerate(self.current_images):
             btn = ttk.Button(self.image_buttons_frame, text=f"圖片 {i+1}",
                              command=lambda u=url: self.load_image(u))
             btn.pack(side="left", padx=5)
 
     # ============================
-    # 載入圖片 + 放大
+    # 載入圖片（本地優先）
     # ============================
     def load_image(self, url):
         try:
-            if url.startswith("//"):
-                url = "https:" + url
+            parsed = urlparse(url)
+            filename = os.path.basename(parsed.path)
 
-            response = requests.get(url)
-            img = Image.open(BytesIO(response.content))
+            local_folder = "avalon_images"
+            local_path = os.path.join(local_folder, filename)
 
-            small = img.resize((260, 360), Image.LANCZOS)
+            if os.path.exists(local_path):
+                img = Image.open(local_path)
+            else:
+                if url.startswith("//"):
+                    url = "https:" + url
+                response = requests.get(url)
+                img = Image.open(BytesIO(response.content))
+
+            small = img.resize((360, 500), Image.LANCZOS)
             self.tk_img = ImageTk.PhotoImage(small)
-            self.image_label.config(image=self.tk_img)
+            self.image_label.config(image=self.tk_img, text="")
 
-            self.image_label.bind("<Button-1>", lambda e, im=img: self.open_large_image(im))
-
-        except:
-            self.image_label.config(text="圖片載入失敗")
+        except Exception:
+            self.image_label.config(
+                image="",
+                text="（圖片載入失敗）",
+                background="#333333",
+                foreground="white"
+            )
 
     def open_large_image(self, img):
         top = tk.Toplevel(self.root)
@@ -277,6 +340,7 @@ class CardViewer:
 # 主程式入口
 # ============================
 if __name__ == "__main__":
-    root = tb.Window(themename="darkly")
+    root = tb.Window(themename="litera")
+    root.configure(bg="white")
     app = CardViewer(root)
     root.mainloop()
