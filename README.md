@@ -34,5 +34,5 @@ options.add_argument("--profile-directory=Default")
 options.add_argument("--start-maximized")
 
 🟦 Step 6: Run Your Script
-py -3.12 auto-download-cards.py
+py -3.12 build_database_local.py
 
