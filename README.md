@@ -23,5 +23,8 @@ py -3.12 checkallcards.py
 🟦 Step 8: Update downloaded info to merged-links.json
 py -3.12 update.py
 
-🟦 Step 9: 
+🟦 Step 9: Create a new json with card number.
+py -3.12 cardno2json.py 
+
+🟦 Step 10: 
 py -3.12 viewer.py
