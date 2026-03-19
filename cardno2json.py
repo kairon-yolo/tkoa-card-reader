@@ -5,6 +5,7 @@ INPUT_FILE = "all-cards-number.txt"
 CARDS_JSON = "all-cards-number.json"
 MERGED_FILE = "merged-links.json"
 OUTPUT_FILE = "merged-links-updated.json"
+MISSING_FILE = "missing-cards.txt"
 
 # -------------------------------
 # 解析卡号＋卡名
@@ -54,19 +55,31 @@ def main():
         merged = json.load(f)
 
     updated_count = 0
+    missing_cards = []
 
     # merged-links.json 是 list
     for entry in merged:
         name = entry.get("name")
+
         if name in number_map:
             entry["number"] = number_map[name]
             updated_count += 1
+        else:
+            # 找不到卡号 → 自动填入 "No Card Number/ アヴァロンの鍵 Online Cards"
+            entry["number"] = "No Card Number/ アヴァロンの鍵 Online Cards"
+            missing_cards.append(name)
 
     # 输出更新后的 merged-links-updated.json
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=4)
 
+    # 输出找不到的卡名清单
+    with open(MISSING_FILE, "w", encoding="utf-8") as f:
+        for name in missing_cards:
+            f.write(name + "\n")
+
     print(f"合并完成！成功更新 {updated_count} 张卡片 → {OUTPUT_FILE}")
+    print(f"找不到卡号的卡共 {len(missing_cards)} 个 → {MISSING_FILE}")
 
 if __name__ == "__main__":
     main()
