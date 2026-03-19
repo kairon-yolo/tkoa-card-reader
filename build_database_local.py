@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-MERGED_FILE = "merged.json"
+MERGED_FILE = "merged-links.json"
 SAVE_DIR = "avalon_pages"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
