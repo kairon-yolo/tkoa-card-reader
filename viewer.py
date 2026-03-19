@@ -181,7 +181,7 @@ class CardViewer:
 
             if keyword not in name:
                 continue
-            if attr_filter != "全部" and card.get("attribute") != attr_filter:
+            if attr_filter != "全部" and card.get("attribute_raw") != attr_filter:
                 continue
             if race_filter != "全部" and card.get("race") != race_filter:
                 continue
@@ -200,7 +200,7 @@ class CardViewer:
         card = next(c for c in self.cards if c["name"] == name)
 
         self.title_label.config(text=card["name"])
-        self.show_attribute_badge(card.get("attribute"))
+        self.show_attribute_badge(card.get("attribute_raw"))
 
         # 基本資料
         self.info_text.delete("1.0", "end")
@@ -251,10 +251,10 @@ class CardViewer:
     # ============================
     def show_attribute_badge(self, attr):
         colors = {
-            "黄属性": "#FFD700",
-            "赤属性": "#FF4500",
-            "青属性": "#1E90FF",
-            "緑属性": "#32CD32"
+            "黄": "#FFD700",
+            "赤": "#FF4500",
+            "青": "#1E90FF",
+            "緑": "#32CD32"
         }
         color = colors.get(attr, "#AAAAAA")
         self.attr_label.config(text=attr, background=color, foreground="black")
