@@ -28,6 +28,6 @@ py -3.12 update.py
 py -3.12 cardno2json.py 
 
 🟦 Step 10: 
-py -3.12 viewer.py
+py -3.12 main.py
 
 Few fee to let me know any opportunity to work together make better
