@@ -81,7 +81,7 @@ class CardViewer:
         ttk.Label(left_frame, text="Search Card Name", font=("Arial", 12, "bold")).pack()
         self.search_var = tk.StringVar()
         self.search_var.trace("w", self.update_list)
-        ttk.Entry(left_frame, textvariable=self.search_var, width=20).pack(pady=5)
+        ttk.Entry(left_frame, textvariable=self.search_var, width=12,font=("Arial", 12, "bold")).pack(pady=5)
 
         ttk.Label(left_frame, text="Attribute Filtering", font=("Arial", 11, "bold")).pack(pady=5)
         self.attr_var = tk.StringVar(value="全部")
@@ -115,7 +115,7 @@ class CardViewer:
             width=360,
             background="#FFFFFF",
             foreground="white",
-            font=("Arial", 14)
+            font=("Arial", 20, "bold")
         )
         self.image_label.pack(pady=10, ipady=200)  # 固定高度
 
@@ -132,15 +132,15 @@ class CardViewer:
         self.attr_label.pack(anchor="w")
 
         ttk.Label(right_frame, text="Info", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
-        self.info_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12))
+        self.info_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12, "bold"))
         self.info_text.pack(fill="x")
 
         ttk.Label(right_frame, text="Ability", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
-        self.ability_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12))
+        self.ability_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12, "bold"))
         self.ability_text.pack(fill="x")
 
         ttk.Label(right_frame, text="Description", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
-        self.desc_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12))
+        self.desc_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12, "bold"))
         self.desc_text.pack(fill="both", expand=True)
 
         # 自動換行
