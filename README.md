@@ -1,52 +1,38 @@
-🟦 第 1 步：建立一個專用 Profile
-在 PowerShell 建立資料夾：
+🟦 Step 1: Create a Dedicated Profile
+Create a folder in PowerShell:
+mkdir "C:\Users\XXXX\AppData\Local\Google\Chrome\AvalonProfile"
 
-Code
-mkdir "C:\Users\User\AppData\Local\Google\Chrome\AvalonProfile"
-🟦 第 2 步：用這個 Profile 手動開啟 Chrome
-執行：
+🟦 Step 2: Manually Launch Chrome Using This Profile
+Run:
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --user-data-dir="C:\Users\XXXX\AppData\Local\Google\Chrome\AvalonProfile"
+Chrome will open using this profile (it will be empty the first time).
 
-Code
-"C:\Program Files\Google\Chrome\Application\chrome.exe" --user-data-dir="C:\Users\User\AppData\Local\Google\Chrome\AvalonProfile"
-Chrome 會用這個 Profile 開啟（第一次是空的）。
-
-🟦 第 3 步：手動通過 Cloudflare 驗證
-在 Chrome 裡輸入：
-
-Code
+🟦 Step 3: Manually Pass the Cloudflare Verification
+Inside Chrome, go to:
 https://w.atwiki.jp/avalononline-wiki/pages/32.html
-你會看到：
-
+You should see:
 Verify you are human
+Please manually:
+Click the verification button
+Wait for it to complete
+Confirm that you can see the actual card page
+⚠️ This step is critical. Without it, Selenium will always get stuck.
 
-請手動：
+🟦 Step 4: Completely Close Chrome
+Make sure all Chrome windows are closed. 
+Then check in Task Manager to ensure:
+No chrome.exe processes are still running.
 
-點按驗證
+🟦 Step 5: Let Selenium Use This Profile
+In your Python script, configure:
 
-等它通過
-
-確認你能看到真正的卡片頁面
-
-⚠️ 這一步非常重要，沒有做 Selenium 永遠會卡住。
-
-🟦 第 4 步：完全關閉 Chrome
-務必關掉所有 Chrome 視窗。
-
-🟦 第 5 步：讓 Selenium 使用這個 Profile
-在你的 Python 程式裡設定：
-
-python
-CHROME_PROFILE = r"C:\Users\User\AppData\Local\Google\Chrome\AvalonProfile"
+CHROME_PROFILE = r"C:\Users\XXXX\AppData\Local\Google\Chrome\AvalonProfile"
 
 options = webdriver.ChromeOptions()
 options.add_argument(f"--user-data-dir={CHROME_PROFILE}")
 options.add_argument("--profile-directory=Default")
 options.add_argument("--start-maximized")
-🟦 第 6 步：執行你的程式
-Code
+
+🟦 Step 6: Run Your Script
 py -3.12 auto-download-cards.py
 
-
-然後在 Task Manager 裡確認：
-
-沒有任何 chrome.exe 還在跑
