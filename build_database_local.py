@@ -76,5 +76,4 @@ for item in merged:
         print(f"❌ 下載失敗 {name}: {e}")
 
     human_delay()
-
 driver.quit()
