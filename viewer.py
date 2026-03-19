@@ -10,7 +10,7 @@ import ttkbootstrap as tb
 from ttkbootstrap.constants import *
 import re
 
-JSON_FILE = "merged-links.json"
+JSON_FILE = "merged-links-updated.json"
 
 
 def html_to_text(html):
@@ -205,17 +205,19 @@ class CardViewer:
         # 基本資料
         self.info_text.delete("1.0", "end")
         info = ""
-
+        if "number" in card:
+            info += f"No：{card['number']}\n"
+        if "rare" in card:
+            info += f"レア：{card['rare']}\n"           
         if "series" in card:
             info += f"系列：{card['series']}\n"
+        if "race" in card:
+            info += f"種族：{card['race']}\n"           
         if "attack" in card:
             info += f"攻撃：{card['attack']}\n"
         if "hp" in card:
             info += f"耐久：{card['hp']}\n"
-        if "rare" in card:
-            info += f"レア：{card['rare']}\n"
-        if "race" in card:
-            info += f"種族：{card['race']}\n"
+
 
         self.info_text.insert("1.0", info)
 
