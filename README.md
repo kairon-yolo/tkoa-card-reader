@@ -21,6 +21,7 @@ py -3.12 build_database_local.py
 py -3.12 checkallcards.py
 
 🟦 Step 8: Update downloaded info to merged-links.json
+py -3.12 cardno2json.py
 py -3.12 update.py
 
 🟦 Step 9: Create a new json with card number.
