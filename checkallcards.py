@@ -1,7 +1,7 @@
 import json
 
 # 读取 cards-db.json
-with open("cards-db.json", "r", encoding="utf-8") as f:
+with open("cards-db-base.json", "r", encoding="utf-8") as f:
     cards_db = json.load(f)
 
 # 读取 all-cards-raw-name.txt
