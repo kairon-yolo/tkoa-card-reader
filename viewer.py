@@ -84,9 +84,16 @@ class CardViewer:
         self.center_inner = ttk.Frame(center_canvas)
         center_canvas.create_window((0, 0), window=self.center_inner, anchor="nw")
 
-        self.center_inner.bind("<Configure>", lambda e: center_canvas.configure(scrollregion=center_canvas.bbox("all")))
+        # scrollregion 自動更新
+        def update_scrollregion(event=None):
+            center_canvas.configure(scrollregion=center_canvas.bbox("all"))
 
-        # 中欄內容元件
+        self.center_inner.bind("<Configure>", update_scrollregion)
+        center_canvas.bind("<Configure>", update_scrollregion)
+
+        # ============================
+        # 中欄內容元件（會依內容自動伸展）
+        # ============================
         self.title_label = ttk.Label(self.center_inner, text="", font=("Arial", 22, "bold"))
         self.title_label.pack(pady=10)
 
@@ -94,16 +101,16 @@ class CardViewer:
         self.attr_label.pack()
 
         ttk.Label(self.center_inner, text="基本資料 Info", font=("Arial", 14, "bold")).pack(pady=5)
-        self.info_html = HTMLLabel(self.center_inner, html="", width=80, height=6)
-        self.info_html.pack(pady=5)
+        self.info_html = HTMLLabel(self.center_inner, html="")
+        self.info_html.pack(pady=5, fill="x", anchor="w")
 
         ttk.Label(self.center_inner, text="能力 Ability", font=("Arial", 14, "bold")).pack(pady=5)
-        self.ability_html = HTMLLabel(self.center_inner, html="", width=80, height=8)
-        self.ability_html.pack(pady=5)
+        self.ability_html = HTMLLabel(self.center_inner, html="")
+        self.ability_html.pack(pady=5, fill="x", anchor="w")
 
         ttk.Label(self.center_inner, text="卡片說明 Description", font=("Arial", 14, "bold")).pack(pady=5)
-        self.desc_html = HTMLLabel(self.center_inner, html="", width=80, height=15)
-        self.desc_html.pack(pady=5)
+        self.desc_html = HTMLLabel(self.center_inner, html="")
+        self.desc_html.pack(pady=5, fill="x", anchor="w")
 
         # ============================
         # 右欄內容（圖片）
@@ -116,6 +123,17 @@ class CardViewer:
 
         # 初始化列表
         self.update_list()
+
+    # ============================
+    # HTMLLabel 自動縮小補丁
+    # ============================
+    def shrink_html_label(self, html_label):
+        html_label.update_idletasks()
+        # 找到 Text widget
+        for child in html_label.children.values():
+            if isinstance(child, tk.Text):
+                lines = int(child.index("end-1c").split(".")[0])
+                child.configure(height=lines)
 
     # ============================
     # 搜尋 + 篩選
@@ -170,14 +188,17 @@ class CardViewer:
             info += f"<b>移動色：</b> {move_html}<br/>"
 
         self.info_html.set_html(info)
+        self.shrink_html_label(self.info_html)
 
         # 能力
         ability_html = card.get("ability_html", "").replace("<br>", "<br/>")
         self.ability_html.set_html(ability_html)
+        self.shrink_html_label(self.ability_html)
 
         # 說明
         desc_html = card.get("description_html", "").replace("<br>", "<br/>")
         self.desc_html.set_html(desc_html)
+        self.shrink_html_label(self.desc_html)
 
         # 圖片
         self.show_images(card)
