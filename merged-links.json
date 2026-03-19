@@ -1,0 +1,2942 @@
+[
+  {
+    "name": "ビーパ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/32.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ポイズンスパイク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/33.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "アライクパ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/34.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "チャロ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/53.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ビッグボウ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/54.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ゴースト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/55.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "魔法剣士",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/56.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "キャッスルカノン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/57.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ブラッギス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/58.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "絶望のトビラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/59.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "キラーレディー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/60.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "プラテウム",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/61.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "暗黒魔王",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/62.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "インフィニティー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/63.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ジャンプー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/64.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "AI",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/65.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ストラグラー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/143.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "女神",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/144.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "プテラノ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/145.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ハーピィ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/146.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "リッターエリカ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/147.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "アシュラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/148.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "スペクタ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/149.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "アタックベル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/150.html",
+    "series": "第一弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "エンペラー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/151.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マーメイド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/152.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シータンク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/153.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ディープシーカー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/154.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "アンチュ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/155.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ケルピー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/156.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ダゴン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/157.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シーミラー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/158.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ファントムゼリー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/159.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "レッドザガ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/160.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ブルーザガ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/161.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "オクトバ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/162.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "セイレーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/163.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "スカルマン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/164.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "メガジョー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/165.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "カメポポン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/166.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "アーマトード",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/167.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "キングオクトバ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/168.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "トカ・ゲーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/175.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ユキフブキ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/176.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マッドマネキ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/177.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ウォーメイド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/178.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "スライムス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/179.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "パイレーズ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/180.html",
+    "series": "第一弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "アーミーアント",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/312.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "メカニモンク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/313.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "アサシン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/314.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "フェレット",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/315.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/316.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "アーマジロ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/317.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "黒の王",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/422.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "グラディエーター",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/423.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ケンタウルスヘル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/424.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "スフィンクス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/425.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "キマイラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/426.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "阿",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/427.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "云",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/452.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ガルダ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/453.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "カリバーホーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/454.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ン・キィー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/455.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ウォーリアー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/456.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "サラマンダー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/457.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "タイガー剣士",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/542.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリー桜",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/459.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "フレイソウル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/460.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ヴァーンドラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/461.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "気高き勇士",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/462.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ドラゴノイド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/463.html",
+    "series": "第一弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "パックル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/464.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "タワー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/465.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "リンリン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/466.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "チャイリン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/467.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ピックル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/468.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "パン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/469.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ルーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/470.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "コングボス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/471.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "リッチー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/472.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ウッデン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/473.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "クワガドス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/474.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "レイコーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/475.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "鬼ブル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/476.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ブレスト伯爵",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/477.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ピノ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/478.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "アマゾーネ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/479.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "カブトス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/480.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "レックスセーバー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/481.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ガブール",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/482.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "妖精騎士",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/483.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ランストプス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/484.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "マシンナイト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/485.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "マリーローズ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/486.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ドラゴセーバー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/487.html",
+    "series": "第一弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "イカロスウイング",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/488.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "女神の息吹",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/489.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "破壊の業火",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/490.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "メイジパラサイト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/491.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "絶命の波動",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/492.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "ディスプレイス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/493.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "天変地異",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/494.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "魔法反射",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/495.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "猫の招き声",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/538.html",
+    "series": "第一弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "墓場の暗盾",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/496.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "破壊の報復",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/497.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "威圧のオーラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/498.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "フィールドアーマ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/541.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "カードブレイク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/500.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "メルトダウン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/501.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "攻撃強化",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/502.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "突進",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/503.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "悪魔の天秤",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/504.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "光の盾",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/505.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "死の鷲掴み",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/506.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "悪夢の戦い",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/507.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "消滅",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/508.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "増殖",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/509.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "心眼",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/510.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "特性侵食",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/528.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "かすめ取り",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/529.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "弱体化の霧",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/530.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "目くらまし",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/531.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "封じ込め",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/532.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "七星の悟り",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/533.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "王者決定戦",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/534.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "一閃の弓",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/535.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "陰陽の戦鎧",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/536.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "聖なる槌",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/537.html",
+    "series": "第一弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "ピアス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/558.html",
+    "series": "第二弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "チャリオ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/559.html",
+    "series": "第二弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "イグアン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/560.html",
+    "series": "第二弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ライフルーツ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/561.html",
+    "series": "第二弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ピヨヒヨ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/549.html",
+    "series": "第二弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "エレティカ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/550.html",
+    "series": "第二弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "トットー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/562.html",
+    "series": "第二弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シーラドン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/563.html",
+    "series": "第二弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "スカルシップ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/564.html",
+    "series": "第二弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ネプチューン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/565.html",
+    "series": "第二弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ウンディーネ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/551.html",
+    "series": "第二弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ホワイトベアー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/552.html",
+    "series": "第二弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ブレードタイガー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/566.html",
+    "series": "第二弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "スコルプ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/568.html",
+    "series": "第二弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ジラコバルト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/569.html",
+    "series": "第二弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ナーガ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/570.html",
+    "series": "第二弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "マグマコウモリ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/553.html",
+    "series": "第二弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ヒクイドリ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/554.html",
+    "series": "第二弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "アラクノフォビア",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/572.html",
+    "series": "第二弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "現世の歩兵",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/573.html",
+    "series": "第二弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "カミーラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/574.html",
+    "series": "第二弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ロータン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/575.html",
+    "series": "第二弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "フランフラワ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/555.html",
+    "series": "第二弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "マシンファイター",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/556.html",
+    "series": "第二弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "天女の羽衣",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/576.html",
+    "series": "第二弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "転生の宴",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/577.html",
+    "series": "第二弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "道化師の呪い",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/578.html",
+    "series": "第二弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "脆弱の沼",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/579.html",
+    "series": "第二弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "硬気功",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/580.html",
+    "series": "第二弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "背水の陣",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/581.html",
+    "series": "第二弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "モグタン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/602.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "パクー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/603.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "フィフティニー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/604.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "グリゲーター",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/605.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ダゴナイト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/606.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "オウリーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/607.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ゼベエト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/592.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ヘブンタウルス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/593.html",
+    "series": "第三弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "スケールイータ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/608.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "エンゼルピッチュ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/609.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ジグラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/610.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "サルヴェージ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/611.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "サーペント",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/612.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ヤドカリン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/613.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "タコさん",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/594.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "漆黒の美貌",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/595.html",
+    "series": "第三弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "クマゴロウ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/614.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ラフリア（冬）",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/615.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリークララ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/616.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "パールハウンド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/617.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "スタッブスポーク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/619.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ベビドーラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/618.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ディモンハート",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/596.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ワルキューレゼロ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/597.html",
+    "series": "第三弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ハコリス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/620.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "リーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/621.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "フリィーキィー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/622.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "古代の歩兵",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/623.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "オロチ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/624.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ケイオスウォール",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/625.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ルーファン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/598.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "クワガス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/599.html",
+    "series": "第三弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "挑戦状",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/626.html",
+    "series": "第三弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "守護の光",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/627.html",
+    "series": "第三弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "盗賊の手",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/628.html",
+    "series": "第三弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "魔界の呼び手",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/600.html",
+    "series": "第三弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "聖女の加護",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/629.html",
+    "series": "第三弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "刹那の見切り",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/630.html",
+    "series": "第三弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "魔鏡",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/631.html",
+    "series": "第三弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "魔心必滅",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/601.html",
+    "series": "第三弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "プリティベル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/689.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ブルホーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/690.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "サイロン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/691.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "カルト・ホール",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/692.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "契約の証",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/693.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ドリルザーグ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/694.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ケルベス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/695.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "マグギラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/684.html",
+    "series": "第四弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "シーワーム",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/696.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "メタル・ハーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/697.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "オオサン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/698.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ネオン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/699.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シーカッター",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/700.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "レッドズワイ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/701.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ムチュゴロウ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/702.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "カリブデス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/685.html",
+    "series": "第四弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "レッド・ジュエル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/703.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ラフリア（春）",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/704.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ジラクリムゾン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/705.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ジラオーカー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/706.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バスタートル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/707.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ボルカノ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/708.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "レッドアイズ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/709.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリーレーナ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/686.html",
+    "series": "第四弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "キノーピⅡ世",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/712.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ナイトキャット",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/713.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ポッコロ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/714.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ユニコーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/715.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ワーム",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/716.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "時空の歩兵",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/717.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "未来の歩兵",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/711.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "プラデュラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/687.html",
+    "series": "第四弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "死人召喚",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/718.html",
+    "series": "第四弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "異形の力",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/719.html",
+    "series": "第四弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "覚醒",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/720.html",
+    "series": "第四弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "聖騎士の紋章",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/721.html",
+    "series": "第四弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "黒の称号",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/722.html",
+    "series": "第四弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "金剛杵",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/723.html",
+    "series": "第四弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "アンデッドソード",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/724.html",
+    "series": "第四弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "曙光",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/688.html",
+    "series": "第四弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "ヘルドロイ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/733.html",
+    "series": "第五弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "エイイアン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/734.html",
+    "series": "第五弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ディアボルガ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/735.html",
+    "series": "第五弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ゴクーゾ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/736.html",
+    "series": "第五弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "メイドラマイマイ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/737.html",
+    "series": "第五弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "イエローパズル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/738.html",
+    "series": "第五弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ジャンフィニー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/813.html",
+    "series": "第五弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ユキダルマン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/739.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シードラコ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/740.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シーウエポン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/741.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "カワワッパ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/742.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "魔神の麓",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/743.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ブルーパズル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/744.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "エンペラー（絆）",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/814.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "エンペラー（愛）",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/817.html",
+    "series": "第五弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マグナード",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/745.html",
+    "series": "第五弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "グラディウス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/746.html",
+    "series": "第五弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "エレフォート",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/747.html",
+    "series": "第五弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "鬼神",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/748.html",
+    "series": "第五弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "レッドパズル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/749.html",
+    "series": "第五弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ウォーナイト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/750.html",
+    "series": "第五弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "サラマンダーMX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/815.html",
+    "series": "第五弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "マンティガン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/751.html",
+    "series": "第五弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "コアラ先生",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/752.html",
+    "series": "第五弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ガブラント",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/753.html",
+    "series": "第五弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "KP",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/754.html",
+    "series": "第五弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "サボー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/755.html",
+    "series": "第五弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "グリーンパズル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/756.html",
+    "series": "第五弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ブレストナイト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/816.html",
+    "series": "第五弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "断罪の矢",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/759.html",
+    "series": "第五弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "複製の技法",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/760.html",
+    "series": "第五弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "エルフの秘宝",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/761.html",
+    "series": "第五弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "呪術師の祈り",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/762.html",
+    "series": "第五弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "便利なポケット",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/763.html",
+    "series": "第五弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "珍獣の羽",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/764.html",
+    "series": "第五弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "亡者の盾",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/765.html",
+    "series": "第五弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "天空の武具",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/766.html",
+    "series": "第五弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "勇者の精神",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/767.html",
+    "series": "第五弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "古代樹の実",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/768.html",
+    "series": "第五弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "セラフィー・ルカ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/775.html",
+    "series": "第六弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ねんねんね",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/774.html",
+    "series": "第六弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "イヌガミ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/773.html",
+    "series": "第六弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "Mr.ジェントル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/772.html",
+    "series": "第六弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ふぅ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/771.html",
+    "series": "第六弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "リッター綺林",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/770.html",
+    "series": "第六弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "アンモロドン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/781.html",
+    "series": "第六弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ボウズ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/780.html",
+    "series": "第六弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ライトニンゲソ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/779.html",
+    "series": "第六弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "魔神の果て",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/778.html",
+    "series": "第六弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マープリティ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/777.html",
+    "series": "第六弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "フクロウ教授",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/776.html",
+    "series": "第六弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ドラゴロック",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/786.html",
+    "series": "第六弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "魔法剣客",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/787.html",
+    "series": "第六弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ガーディアン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/785.html",
+    "series": "第六弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリー燕",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/784.html",
+    "series": "第六弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリーレイヤ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/783.html",
+    "series": "第六弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "アークブレス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/782.html",
+    "series": "第六弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ミスティコクーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/793.html",
+    "series": "第六弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "クインセクト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/792.html",
+    "series": "第六弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ギャーッ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/791.html",
+    "series": "第六弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "レイクーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/790.html",
+    "series": "第六弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "モービアス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/789.html",
+    "series": "第六弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "マシンメイデン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/788.html",
+    "series": "第六弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "守護天使",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/799.html",
+    "series": "第六弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "人魚の涙",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/798.html",
+    "series": "第六弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "異界の扉",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/797.html",
+    "series": "第六弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "刻の隼",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/796.html",
+    "series": "第六弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "機械の翼",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/795.html",
+    "series": "第六弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "竜呼の陣",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/794.html",
+    "series": "第六弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "進化の時",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/805.html",
+    "series": "第六弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "護符術",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/804.html",
+    "series": "第六弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "堕天使の嘆き",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/803.html",
+    "series": "第六弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "縛りの呪い",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/802.html",
+    "series": "第六弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "名刀の刃紋",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/801.html",
+    "series": "第六弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "絶なる魔力",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/800.html",
+    "series": "第六弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "天使長クリオラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/845.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "審判の石像",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/846.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ポヨロール",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/847.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ミスブラッディー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/848.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "シュトグサ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/849.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ブリュンヒルド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/850.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "竜を狩る天使",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/851.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "デスブリンガー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/852.html",
+    "series": "第七弾",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "イビルポセイドン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/853.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "雷雷",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/854.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "風風",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/856.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "テルテルオ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/858.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ルサルカ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/859.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "アリアオロ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/857.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ナーガラジャ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/860.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "七つの海の王子",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/861.html",
+    "series": "第七弾",
+    "attribute": "青属性"
+  },
+  {
+    "name": "仙龍",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/863.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "隼丸",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/864.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "パンダ師範",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/865.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "鉄の竜",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/866.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "アーミーナイト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/867.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルバロッサ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/868.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ガルム",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/869.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "レッドホーン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/855.html",
+    "series": "第七弾",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ディナセーバー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/871.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "カク象",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/872.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "チャイレン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/873.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "プリンセス騎士",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/874.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "バジリス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/875.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "サルガタナス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/876.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "M・エンプレス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/877.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ヴィヴィアン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/878.html",
+    "series": "第七弾",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "海王の王冠",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/879.html",
+    "series": "第七弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "冥主の城",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/880.html",
+    "series": "第七弾",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "トリックスター",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/881.html",
+    "series": "第七弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "熱帯魚の唇",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/882.html",
+    "series": "第七弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "口寄せの儀式",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/883.html",
+    "series": "第七弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "千年の覇王",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/884.html",
+    "series": "第七弾",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "黄玉文明",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/927.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "エニグマ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/928.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "リッターシエラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/930.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "バルキリー牡丹",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/931.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "バルキリーローザ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/932.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "蒼玉文明",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/933.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "青属性"
+  },
+  {
+    "name": "メタルマーメイド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/934.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ブルー・ジュエル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/935.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "青属性"
+  },
+  {
+    "name": "バクバク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/936.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マナドナ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/937.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "青属性"
+  },
+  {
+    "name": "朱玉文明",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/938.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "メルラフリア",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/939.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリー雀",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/940.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "草薙の燕",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/941.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "リッターマドカ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/942.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "緑玉文明",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/943.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "アルラウネ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/944.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "メタルイーター",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/945.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ウォーレディー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/946.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ドラゴフォレスト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/947.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "玉文明の聖地",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/948.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "緑の聖域",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/949.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "不死鳥天舞",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/950.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "聖女の魂",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/951.html",
+    "series": "Story I 聖女降臨",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "セクシーベル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/961.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ヒッポグリフ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/969.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "冥魔ポロン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/963.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "リリエラ・マリー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/970.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "キャドラトル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/971.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "シークランク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/973.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "青属性"
+  },
+  {
+    "name": "冥斧ヴァル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/966.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "青属性"
+  },
+  {
+    "name": "冥妃エレノア",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/967.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マトリとシュカ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/974.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シータイタン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/975.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マダムキス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/977.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ミスディレクト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/978.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ベヒーモス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/979.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ディジェネレータ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/980.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "冥剣ユラナス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/968.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "生命の息吹",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/981.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "冥弓アルテナ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/965.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "冥槍クロノ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/964.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "リベリュード",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/982.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "覇王の剣",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/983.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "幸福のラッパ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/976.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "冥軍新攻",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/972.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "風雷の舞",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/960.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "魅惑の毒針",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/962.html",
+    "series": "Story II 冥軍新攻",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "アルビノ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/989.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ウォーテウム",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/990.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "翼のエトワール",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/991.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "剣のローレンス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/992.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ウォーフォーク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/993.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "青属性"
+  },
+  {
+    "name": "拳のクリストフ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/994.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "青属性"
+  },
+  {
+    "name": "千年の王(幻影)",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/986.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "瞳のアルベール",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/995.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "爪のセトラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/996.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "伝説の海賊旗",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/997.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "コッペリアの夢",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1002.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "キマイラの宝石",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/987.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "魔王の鼓動",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/998.html",
+    "series": "Story III 魔王の下僕",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "ストラグラーEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1004.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "メイドラマイマイEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1005.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "リッターエリカEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1006.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "幻の探検家グラマノ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1007.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "トカ・ゲーンEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1008.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "青属性"
+  },
+  {
+    "name": "マーメイドEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1009.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ウォーメイドEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1010.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "青属性"
+  },
+  {
+    "name": "聖母セリア",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1011.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ケンタウルスヘルEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1012.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "隼丸EX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1013.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリー桜EX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1014.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "業火レッドアイズ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1015.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "バルキリークリスマス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1020.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ナイトキャットEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1016.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ルーファンEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1017.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "時空の歩兵EX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1018.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "戦神ブレストナイト",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1019.html",
+    "series": "EX_I ADVENTURER",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "モグタンEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1022.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "アタックベルEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1023.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "絶望のトビラEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1024.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "インフィニティーEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1025.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "魔剣士エリクシル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1027.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "トットーEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1031.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "青属性"
+  },
+  {
+    "name": "スケールイータEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1032.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ウンディーネEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1033.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "青属性"
+  },
+  {
+    "name": "キングオクトバEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1034.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "青属性"
+  },
+  {
+    "name": "覚醒ケルピー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1035.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "青属性"
+  },
+  {
+    "name": "フェレットEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1036.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ヒクイドリEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1037.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ベヒーモスEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1038.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ナーガEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1040.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "羅漢仁王",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1039.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ロータンEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1041.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "レックスセーバーEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1042.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ドラゴセーバーEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1043.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ケイオスウォールEX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1044.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "巨獣使いエレン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1026.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "天女の羽衣EX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1045.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "天変地異EX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1046.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "マップ上魔法"
+  },
+  {
+    "name": "珍獣の羽EX",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1028.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "死霊の呼び声",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1030.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "コッペリアの愛",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1029.html",
+    "series": "EX_II AWAKENING",
+    "attribute": "戦闘支援"
+  },
+  {
+    "name": "ロザンナ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1048.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "コレット",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1049.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "オートス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1050.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "フェルラート",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1051.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ブラッドマン",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1052.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ルシア",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1053.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "カティラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1054.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "リティル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1055.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "こたつねこ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1056.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "黄属性"
+  },
+  {
+    "name": "ヒルメ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1057.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ガーディア",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1058.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ルーテウム",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1059.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "シーカス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1060.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "エブリーヌ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1061.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ガフク",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1062.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ノゼ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1063.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "ヴァルカイザー",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1064.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "コイノボリの憂鬱",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1081.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "青属性"
+  },
+  {
+    "name": "レオパルド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1065.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ウォベル",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1066.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "マイコニド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1067.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ブレイブ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1068.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ディスタ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1069.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ラスフィール",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1070.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "リヴェイラ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1071.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "ユーニ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1072.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "赤属性"
+  },
+  {
+    "name": "インサイド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1073.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "メティス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1074.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ベロス",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1075.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "プロポジッション",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1076.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "リビングベア",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1077.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "スケーニカ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1078.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "アイギナ",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1079.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  },
+  {
+    "name": "ナ・イグナ・グド",
+    "url": "https://w.atwiki.jp/avalononline-wiki/pages/1080.html",
+    "series": "EX_III OTHER HEROES",
+    "attribute": "緑属性"
+  }
+]
