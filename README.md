@@ -12,4 +12,8 @@ CHROME_PROFILE = r"C:\Users\XXXX\AppData\Local\Google\Chrome\AvalonProfile"
 
 options = webdriver.ChromeOptions() options.add_argument(f"--user-data-dir={CHROME_PROFILE}") options.add_argument("--profile-directory=Default") options.add_argument("--start-maximized")
 
-🟦 Step 6: Run Your Script py -3.12 build_database_local.py
+🟦 Step 6: Run Your Script 
+py -3.12 build_database_local.py
+
+🟦 Step 7: Check all card in JSON
+py -3.12 checkallcards.py
