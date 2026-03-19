@@ -44,17 +44,17 @@ class CardViewer:
         left_frame.grid(row=0, column=0, sticky="ns", padx=10, pady=10)
         left_frame.grid_propagate(False)
 
-        ttk.Label(left_frame, text="Card Name or No. ", font=("Arial", 12, "bold")).pack()
+        ttk.Label(left_frame, text="カード名／番号", font=("Arial", 12, "bold")).pack()
         self.search_var = tk.StringVar()
         self.search_var.trace("w", self.update_list)
         ttk.Entry(left_frame, textvariable=self.search_var, width=12, font=("Arial", 12, "bold")).pack(pady=5)
 
-        ttk.Label(left_frame, text="Attribute Filtering", font=("Arial", 12, "bold")).pack(pady=5)
+        ttk.Label(left_frame, text="属性で絞り込み", font=("Arial", 12, "bold")).pack(pady=5)
         self.attr_var = tk.StringVar(value="全部")
         attrs = ["全部", "黄属性", "赤属性", "青属性", "緑属性"]
         ttk.OptionMenu(left_frame, self.attr_var, "全部", *attrs, command=lambda _: self.update_list()).pack()
 
-        ttk.Label(left_frame, text="Ethnicity Filtering", font=("Arial", 12, "bold")).pack(pady=5)
+        ttk.Label(left_frame, text="種族で絞り込み", font=("Arial", 12, "bold")).pack(pady=5)
         self.race_var = tk.StringVar(value="全部")
         races = ["全部"] + sorted({c.get("race", "") for c in self.cards})
         ttk.OptionMenu(left_frame, self.race_var, "全部", *races, command=lambda _: self.update_list()).pack()
@@ -107,7 +107,7 @@ class CardViewer:
         # Info
         info_frame = ttk.Frame(middle_frame)
         info_frame.grid(row=0, column=0, sticky="nsew", padx=5)
-        ttk.Label(info_frame, text="Info", font=("Arial", 14, "bold")).pack(anchor="w")
+        ttk.Label(info_frame, text="能力値", font=("Arial", 14, "bold")).pack(anchor="w")
         info_scroll = ttk.Scrollbar(info_frame, orient="vertical")
         info_scroll.pack(side="right", fill="y")
         self.info_text = tk.Text(info_frame, wrap="word", height=6, font=("Arial", 12, "bold"),
@@ -118,7 +118,7 @@ class CardViewer:
         # Ability
         ability_frame = ttk.Frame(middle_frame)
         ability_frame.grid(row=0, column=1, sticky="nsew", padx=5)
-        ttk.Label(ability_frame, text="Ability", font=("Arial", 14, "bold")).pack(anchor="w")
+        ttk.Label(ability_frame, text="能力発動条件", font=("Arial", 14, "bold")).pack(anchor="w")
         ability_scroll = ttk.Scrollbar(ability_frame, orient="vertical")
         ability_scroll.pack(side="right", fill="y")
         self.ability_text = tk.Text(ability_frame, wrap="word", height=6, font=("Arial", 12, "bold"),
@@ -129,7 +129,7 @@ class CardViewer:
         # Description
         desc_frame = ttk.Frame(right_frame)
         desc_frame.pack(fill="x", pady=5)
-        ttk.Label(desc_frame, text="Description", font=("Arial", 14, "bold")).pack(anchor="w")
+        ttk.Label(desc_frame, text="情報", font=("Arial", 14, "bold")).pack(anchor="w")
         desc_scroll = ttk.Scrollbar(desc_frame, orient="vertical")
         desc_scroll.pack(side="right", fill="y")
         self.desc_text = tk.Text(desc_frame, wrap="word", font=("Arial", 12, "bold"),
@@ -142,7 +142,7 @@ class CardViewer:
         # -------------------------
         bottom_frame = ttk.Frame(root)
         bottom_frame.grid(row=1, column=1, columnspan=2, sticky="ew", padx=10, pady=10)
-        ttk.Label(bottom_frame, text="Deck", font=("Arial", 14, "bold")).grid(row=0, column=0, columnspan=10, sticky="w")
+        ttk.Label(bottom_frame, text="デッキ", font=("Arial", 14, "bold")).grid(row=0, column=0, columnspan=10, sticky="w")
 
         self.grid_cells = []
         CELL_W, CELL_H = 47, 64
@@ -251,7 +251,7 @@ class CardViewer:
             return
         self.load_image(self.current_images[0])
         for i, url in enumerate(self.current_images):
-            btn = ttk.Button(self.image_buttons_frame, text=f"圖片 {i+1}", command=lambda u=url: self.load_image(u))
+            btn = ttk.Button(self.image_buttons_frame, text=f"Photo {i+1}", command=lambda u=url: self.load_image(u))
             btn.pack(side="left", padx=5)
 
     def load_image(self, url):
