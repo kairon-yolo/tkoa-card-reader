@@ -19,3 +19,9 @@ py -3.12 build_database_local.py
 
 🟦 Step 7: Check all card in JSON
 py -3.12 checkallcards.py
+
+🟦 Step 8: Update downloaded info to merged-links.json
+py -3.12 update.py
+
+🟦 Step 9: 
+py -3.12 viewer.py
