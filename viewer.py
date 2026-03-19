@@ -38,9 +38,10 @@ def parse_move_color(html):
 class CardViewer:
     def __init__(self, root):
         self.root = root
-        self.root.title("Avalon Card Viewer - Modern Edition")
-        self.root.geometry("1000x600")
-
+        self.root.title("tkoa Card Collector App")
+        self.root.geometry("1260x620")
+        self.root.state("zoomed")
+        
         tb.Style("litera")
 
         with open(JSON_FILE, "r", encoding="utf-8") as f:
@@ -125,23 +126,82 @@ class CardViewer:
         # ============================
         # 右欄內容（文字區）
         # ============================
+  # ============================
+        # 右欄內容（文字區）
+        # ============================
+
+        # Title
         self.title_label = ttk.Label(right_frame, text="", font=("Arial", 22, "bold"))
         self.title_label.pack(pady=10, anchor="w")
 
+        # Attribute
         self.attr_label = ttk.Label(right_frame, text="", font=("Arial", 14, "bold"))
         self.attr_label.pack(anchor="w")
 
-        ttk.Label(right_frame, text="Info", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
-        self.info_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12, "bold"))
+        # ----------------------------
+        # Info 區塊（含 scrollbar）
+        # ----------------------------
+        info_frame = ttk.Frame(right_frame)
+        info_frame.pack(fill="x", pady=5)
+
+        ttk.Label(info_frame, text="Info", font=("Arial", 14, "bold")).pack(anchor="w")
+
+        info_scroll = ttk.Scrollbar(info_frame, orient="vertical")
+        info_scroll.pack(side="right", fill="y")
+
+        self.info_text = tk.Text(
+            info_frame,
+            wrap="word",
+            height=4,
+            font=("Arial", 12, "bold"),
+            yscrollcommand=info_scroll.set
+        )
         self.info_text.pack(fill="x")
 
-        ttk.Label(right_frame, text="Ability", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
-        self.ability_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12, "bold"))
+        info_scroll.config(command=self.info_text.yview)
+
+        # ----------------------------
+        # Ability 區塊（含 scrollbar）
+        # ----------------------------
+        ability_frame = ttk.Frame(right_frame)
+        ability_frame.pack(fill="x", pady=5)
+
+        ttk.Label(ability_frame, text="Ability", font=("Arial", 14, "bold")).pack(anchor="w")
+
+        ability_scroll = ttk.Scrollbar(ability_frame, orient="vertical")
+        ability_scroll.pack(side="right", fill="y")
+
+        self.ability_text = tk.Text(
+            ability_frame,
+            wrap="word",
+            height=4,
+            font=("Arial", 12, "bold"),
+            yscrollcommand=ability_scroll.set
+        )
         self.ability_text.pack(fill="x")
 
-        ttk.Label(right_frame, text="Description", font=("Arial", 14, "bold")).pack(pady=5, anchor="w")
-        self.desc_text = tk.Text(right_frame, wrap="word", height=1, font=("Arial", 12, "bold"))
+        ability_scroll.config(command=self.ability_text.yview)
+
+        # ----------------------------
+        # Description 區塊（含 scrollbar）
+        # ----------------------------
+        desc_frame = ttk.Frame(right_frame)
+        desc_frame.pack(fill="both", expand=True, pady=5)
+
+        ttk.Label(desc_frame, text="Description", font=("Arial", 14, "bold")).pack(anchor="w")
+
+        desc_scroll = ttk.Scrollbar(desc_frame, orient="vertical")
+        desc_scroll.pack(side="right", fill="y")
+
+        self.desc_text = tk.Text(
+            desc_frame,
+            wrap="word",
+            font=("Arial", 12, "bold"),
+            yscrollcommand=desc_scroll.set
+        )
         self.desc_text.pack(fill="both", expand=True)
+
+        desc_scroll.config(command=self.desc_text.yview)
 
         # 自動換行
         self.root.bind("<Configure>", self.resize_text_wrap)
@@ -336,7 +396,8 @@ class CardViewer:
         lbl = ttk.Label(top, image=tk_big)
         lbl.image = tk_big
         lbl.pack()
-
+    def scale_ui(self, factor):
+        self.root.tk.call('tk', 'scaling', factor)
 
 # ============================
 # 主程式入口
