@@ -1,5 +1,6 @@
 import os
 import tkinter as tk
+from tkinter import Text
 from tkinter import ttk
 from urllib.parse import urlparse
 from PIL import Image, ImageTk
@@ -8,7 +9,6 @@ from io import BytesIO
 import ttkbootstrap as tb
 from ttkbootstrap.constants import *
 import threading
-
 from utils import load_json_with_fallback, html_to_text, parse_move_color, JSON_FILE
 
 
@@ -17,29 +17,23 @@ class CardViewer:
         self.root = root
         self.root.title("tkoa Card Collector App")
         self.root.geometry("1260x620")
-        self.root.minsize(1200, 620)  # 最小窗口尺寸
+        self.root.minsize(1200, 620)
 
         # Load JSON
         self.cards = load_json_with_fallback(JSON_FILE)
         if self.cards is None:
             return
 
+        # Apply ttkbootstrap theme
         tb.Style("litera")
-
-        # -------------------------
-        # Layout grid: 2 rows, 3 columns
-        # row0: left_frame | center_frame | right_frame
-        # row1: bottom_frame (gallery) spans columns 1-2
-        # -------------------------
+        # Layout grid
         root.grid_columnconfigure(0, weight=0)
         root.grid_columnconfigure(1, weight=0)
         root.grid_columnconfigure(2, weight=1)
         root.grid_rowconfigure(0, weight=1)
         root.grid_rowconfigure(1, weight=0)
 
-        # -------------------------
         # Left panel
-        # -------------------------
         left_frame = ttk.Frame(root, width=250)
         left_frame.grid(row=0, column=0, sticky="ns", padx=10, pady=10)
         left_frame.grid_propagate(False)
@@ -70,9 +64,7 @@ class CardViewer:
         scrollbar.pack(side="right", fill="y")
         self.listbox.config(yscrollcommand=scrollbar.set)
 
-        # -------------------------
         # Center panel
-        # -------------------------
         center_frame = ttk.Frame(root, width=256)
         center_frame.grid(row=0, column=1, sticky="ns", padx=10, pady=10)
         center_frame.grid_propagate(False)
@@ -85,9 +77,7 @@ class CardViewer:
         self.image_buttons_frame = ttk.Frame(center_frame)
         self.image_buttons_frame.pack()
 
-        # -------------------------
         # Right panel
-        # -------------------------
         right_frame = ttk.Frame(root)
         right_frame.grid(row=0, column=2, sticky="nsew", padx=10, pady=10)
         right_frame.grid_columnconfigure(0, weight=1)
@@ -98,7 +88,7 @@ class CardViewer:
         self.attr_label = ttk.Label(right_frame, text="", font=("Arial", 14, "bold"))
         self.attr_label.pack(anchor="w")
 
-        # Info + Ability 左右排
+        # Info + Ability
         middle_frame = ttk.Frame(right_frame)
         middle_frame.pack(fill="x", pady=5)
         middle_frame.columnconfigure(0, weight=1)
@@ -110,8 +100,9 @@ class CardViewer:
         ttk.Label(info_frame, text="能力値", font=("Arial", 14, "bold")).pack(anchor="w")
         info_scroll = ttk.Scrollbar(info_frame, orient="vertical")
         info_scroll.pack(side="right", fill="y")
-        self.info_text = tk.Text(info_frame, wrap="word", height=6, font=("Arial", 12, "bold"),
-                                 yscrollcommand=info_scroll.set)
+
+        self.info_text = Text(info_frame, wrap="word", height=6, font=("Arial", 12, "bold"),
+                              yscrollcommand=info_scroll.set)
         self.info_text.pack(fill="both", expand=True)
         info_scroll.config(command=self.info_text.yview)
 
@@ -121,8 +112,9 @@ class CardViewer:
         ttk.Label(ability_frame, text="能力発動条件", font=("Arial", 14, "bold")).pack(anchor="w")
         ability_scroll = ttk.Scrollbar(ability_frame, orient="vertical")
         ability_scroll.pack(side="right", fill="y")
-        self.ability_text = tk.Text(ability_frame, wrap="word", height=6, font=("Arial", 12, "bold"),
-                                    yscrollcommand=ability_scroll.set)
+
+        self.ability_text = Text(ability_frame, wrap="word", height=6, font=("Arial", 12, "bold"),
+                                 yscrollcommand=ability_scroll.set)
         self.ability_text.pack(fill="both", expand=True)
         ability_scroll.config(command=self.ability_text.yview)
 
@@ -132,14 +124,13 @@ class CardViewer:
         ttk.Label(desc_frame, text="情報", font=("Arial", 14, "bold")).pack(anchor="w")
         desc_scroll = ttk.Scrollbar(desc_frame, orient="vertical")
         desc_scroll.pack(side="right", fill="y")
-        self.desc_text = tk.Text(desc_frame, wrap="word", font=("Arial", 12, "bold"),
-                                 yscrollcommand=desc_scroll.set)
+
+        self.desc_text = Text(desc_frame, wrap="word", font=("Arial", 12, "bold"),
+                              yscrollcommand=desc_scroll.set)
         self.desc_text.pack(fill="x")
         desc_scroll.config(command=self.desc_text.yview)
 
-        # -------------------------
-        # Bottom panel: Gallery 10x2
-        # -------------------------
+        # Bottom panel
         bottom_frame = ttk.Frame(root)
         bottom_frame.grid(row=1, column=1, columnspan=2, sticky="ew", padx=10, pady=10)
         ttk.Label(bottom_frame, text="デッキ", font=("Arial", 14, "bold")).grid(row=0, column=0, columnspan=10, sticky="w")
@@ -162,9 +153,7 @@ class CardViewer:
         self.root.bind("<Configure>", self.resize_text_wrap)
         self.update_list()
 
-    # -------------------------
     # Methods
-    # -------------------------
     def update_list(self, *args):
         keyword = self.search_var.get().lower()
         attr_filter = self.attr_var.get()
@@ -208,7 +197,6 @@ class CardViewer:
             info += f"耐久：{card['hp']}\n"
         self.info_text.insert("1.0", info)
 
-        # Move color
         move_raw = card.get("move_color", "")
         move_text, move_color = parse_move_color(move_raw)
         self.info_text.insert("end", "移動色：")
@@ -228,7 +216,6 @@ class CardViewer:
         self.desc_text.insert("1.0", desc)
         self.shrink_text(self.desc_text)
 
-        # Images
         self.show_images(card)
 
     def show_attribute_badge(self, attr):
@@ -283,12 +270,12 @@ class CardViewer:
         if width > 50:
             wrap = width - 20
             for t in [self.info_text, self.ability_text, self.desc_text]:
-                t.configure(wrap="word", wraplength=wrap)
+                t.configure(wrap="word")
+                t.configure(width=int(wrap / 8))   # 8 是字寬估計值，可調整
 
 
-# -------------------------
+
 # MAIN PROGRAM
-# -------------------------
 if __name__ == "__main__":
     import download_images_auto
 
@@ -298,8 +285,11 @@ if __name__ == "__main__":
             return True
         return len(os.listdir(folder)) == 0
 
-    root = tb.Window(themename="litera")
+    # ✔ 使用 tk.Tk()（不再使用 tb.Window）
+    root = tk.Tk()
+    tb.Style("litera")
     root.configure(bg="white")
+
     app = CardViewer(root)
 
     if should_download_images():
