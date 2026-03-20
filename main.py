@@ -45,7 +45,7 @@ class CardViewer:
 
         ttk.Label(left_frame, text="属性で絞り込み", font=("Arial", 12, "bold")).pack(pady=5)
         self.attr_var = tk.StringVar(value="全部")
-        attrs = ["全部", "黄属性", "赤属性", "青属性", "緑属性"]
+        attrs = ["全部", "黄", "赤", "青", "緑"]
         ttk.OptionMenu(left_frame, self.attr_var, "全部", *attrs, command=lambda _: self.update_list()).pack()
 
         ttk.Label(left_frame, text="種族で絞り込み", font=("Arial", 12, "bold")).pack(pady=5)
