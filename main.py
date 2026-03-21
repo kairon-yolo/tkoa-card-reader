@@ -12,6 +12,11 @@ import threading
 from utils import load_json_with_fallback, html_to_text, parse_move_color, JSON_FILE
 
 
+def remove_blank_lines(text):
+        lines = text.splitlines()
+        cleaned = [line for line in lines if line.strip() != ""]
+        return "\n".join(cleaned)
+
 class CardViewer:
     def __init__(self, root):
         self.root = root
@@ -69,7 +74,7 @@ class CardViewer:
         center_frame.grid(row=0, column=1, sticky="ns", padx=10, pady=10)
         center_frame.grid_propagate(False)
 
-        self.image_label = ttk.Label(center_frame, text="（無圖片）", anchor="center",
+        self.image_label = ttk.Label(center_frame, text="(No Image)", anchor="center",
                                      width=256, background="#FFFFFF", foreground="white",
                                      font=("Arial", 20, "bold"))
         self.image_label.pack(pady=10, ipady=200)
@@ -212,6 +217,7 @@ class CardViewer:
 
         # Description
         desc = html_to_text(card.get("description_html", ""))
+        desc = remove_blank_lines(desc)
         self.desc_text.delete("1.0", "end")
         self.desc_text.insert("1.0", desc)
         self.shrink_text(self.desc_text)
@@ -234,7 +240,7 @@ class CardViewer:
                 if "original" in imgset:
                     self.current_images.append(imgset["original"])
         if not self.current_images:
-            self.image_label.config(image="", text="（無圖片）", background="#333333", foreground="white")
+            self.image_label.config(image="", text="(No Image)", background="#333333", foreground="white")
             return
         self.load_image(self.current_images[0])
         for i, url in enumerate(self.current_images):
@@ -258,7 +264,7 @@ class CardViewer:
             self.tk_img = ImageTk.PhotoImage(small)
             self.image_label.config(image=self.tk_img, text="")
         except Exception:
-            self.image_label.config(image="", text="（圖片載入失敗）", background="#333333", foreground="white")
+            self.image_label.config(image="", text="（Image Load Error!）", background="#333333", foreground="white")
 
     def shrink_text(self, text_widget):
         text_widget.update_idletasks()
@@ -271,7 +277,7 @@ class CardViewer:
             wrap = width - 20
             for t in [self.info_text, self.ability_text, self.desc_text]:
                 t.configure(wrap="word")
-                t.configure(width=int(wrap / 8))   # 8 是字寬估計值，可調整
+                t.configure(width=int(wrap / 8))   
 
 
 
@@ -285,7 +291,6 @@ if __name__ == "__main__":
             return True
         return len(os.listdir(folder)) == 0
 
-    # ✔ 使用 tk.Tk()（不再使用 tb.Window）
     root = tk.Tk()
     tb.Style("litera")
     root.configure(bg="white")
