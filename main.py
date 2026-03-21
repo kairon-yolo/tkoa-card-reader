@@ -49,7 +49,7 @@ class CardViewer:
 
         ttk.Label(left_frame, text="属性で絞り込み", font=("Arial", 12, "bold")).pack(pady=5)
         self.attr_var = tk.StringVar(value="全部")
-        attrs = ["全部", "黄", "赤", "青", "緑"]
+        attrs = ["全部", "黄属性", "赤属性", "青属性", "緑属性"]
         ttk.OptionMenu(left_frame, self.attr_var, "全部", *attrs, command=lambda _: self.update_list()).pack()
 
         ttk.Label(left_frame, text="種族で絞り込み", font=("Arial", 12, "bold")).pack(pady=5)
@@ -59,7 +59,6 @@ class CardViewer:
 
         list_frame = ttk.Frame(left_frame)
         list_frame.pack(fill="both", expand=True, pady=10)
-
 
         self.listbox = tk.Listbox(list_frame, width=20, height=40, font=("Arial", 12, "bold"))
         self.listbox.pack(side="left", fill="y")
@@ -170,7 +169,7 @@ class CardViewer:
             number = card.get("number", "").lower()
             if keyword not in name and keyword not in number:
                 continue
-            if attr_filter != "全部" and card.get("attribute_raw") != attr_filter:
+            if attr_filter != "全部" and card.get("attribute") != attr_filter:
                 continue
             if race_filter != "全部" and card.get("race") != race_filter:
                 continue
@@ -184,7 +183,7 @@ class CardViewer:
         card = next(c for c in self.cards if c["name"] == name)
 
         self.title_label.config(text=card["name"])
-        self.show_attribute_badge(card.get("attribute_raw"))
+        self.show_attribute_badge(card.get("attribute"))
 
         # Info
         self.info_text.delete("1.0", "end")
@@ -201,13 +200,23 @@ class CardViewer:
             info += f"攻撃：{card['attack']}\n"
         if "hp" in card:
             info += f"耐久：{card['hp']}\n"
+
         self.info_text.insert("1.0", info)
 
+        # ⭐⭐⭐ 移動色（完整修正版）⭐⭐⭐
         move_raw = card.get("move_color", "")
-        move_text, move_color = parse_move_color(move_raw)
+        move_parts = parse_move_color(move_raw)
+
         self.info_text.insert("end", "移動色：")
-        self.info_text.insert("end", move_text + "\n", ("move_color",))
-        self.info_text.tag_config("move_color", foreground=move_color)
+
+        for i, (text, color) in enumerate(move_parts):
+            tag_name = f"move_color_{i}"
+            self.info_text.insert("end", text, tag_name)
+            self.info_text.tag_config(tag_name, foreground=color)
+
+        self.info_text.insert("end", "\n")
+        # ⭐⭐⭐ 完成 ⭐⭐⭐
+
         self.shrink_text(self.info_text)
 
         # Ability
@@ -226,7 +235,7 @@ class CardViewer:
         self.show_images(card)
 
     def show_attribute_badge(self, attr):
-        colors = {"黄": "#FFD700", "赤": "#FF4500", "青": "#1E90FF", "緑": "#32CD32"}
+        colors = {"黄属性": "#FFD700", "赤属性": "#FF4500", "青属性": "#1E90FF", "緑属性": "#32CD32"}
         color = colors.get(attr, "#AAAAAA")
         self.attr_label.config(text=attr, background=color, foreground="black")
 
