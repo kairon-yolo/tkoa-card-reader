@@ -7,10 +7,6 @@ from tkinter import filedialog, messagebox
 JSON_FILE = "merged-links-updated.json"
 
 def load_json_with_fallback(json_file):
-    """
-    Try to load JSON_FILE.  
-    If it does not exist, ask the user to select a JSON file and automatically copy it to the program root.
-    """
     if os.path.exists(json_file):
         with open(json_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -38,10 +34,6 @@ def load_json_with_fallback(json_file):
 
 
 def html_to_text(html):
-    """
-    Convert simple HTML into plain text.
-    Supports <br> and removes all other tags.
-    """
     if not html:
         return ""
 
@@ -49,14 +41,23 @@ def html_to_text(html):
     html = re.sub(r"<.*?>", "", html)
     return html.strip()
 
-
 def parse_move_color(html):
-    """
-    Parse HTML like:
-        <span style='color:#xxxxxx'>●●●</span>
-    Returns (text, color)
-    """
-    m = re.search(r"color:\s*(#[0-9a-fA-F]{6})", html)
-    color = m.group(1) if m else "#ffffff"
-    text = re.sub(r"<.*?>", "", html)
-    return text, color
+
+    pattern = r'<span style="color:\s*(#[0-9A-Fa-f]{6})\s*;">(.*?)</span>'
+    matches = re.findall(pattern, html)
+
+    parts = []
+
+    if matches:
+        for color, text in matches:
+            clean_text = re.sub(r'<!--.*?-->', '', text).strip()
+            if clean_text:
+                parts.append((clean_text, color))
+        return parts
+
+    clean_text = re.sub(r'<!--.*?-->', '', html).strip()
+    if clean_text:
+        default_color = "#000000"
+        return [(clean_text, default_color)]
+
+    return []
