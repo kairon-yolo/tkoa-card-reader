@@ -21,9 +21,9 @@ class CardViewer:
     def __init__(self, root):
         self.root = root
         self.root.title("tkoa Card Collector App")
-        self.root.geometry("1260x620")
+        self.root.geometry("1200x620")
         self.root.minsize(1200, 620)
-
+        root.grid_rowconfigure(0, weight=1)
         # Load JSON
         self.cards = load_json_with_fallback(JSON_FILE)
         if self.cards is None:
@@ -41,7 +41,6 @@ class CardViewer:
         # Left panel
         left_frame = ttk.Frame(root, width=250)
         left_frame.grid(row=0, column=0, sticky="ns", padx=10, pady=10)
-        left_frame.grid_propagate(False)
 
         ttk.Label(left_frame, text="カード名／番号", font=("Arial", 12, "bold")).pack()
         self.search_var = tk.StringVar()
@@ -59,9 +58,10 @@ class CardViewer:
         ttk.OptionMenu(left_frame, self.race_var, "全部", *races, command=lambda _: self.update_list()).pack()
 
         list_frame = ttk.Frame(left_frame)
-        list_frame.pack(fill="y", pady=10)
+        list_frame.pack(fill="both", expand=True, pady=10)
 
-        self.listbox = tk.Listbox(list_frame, width=25, height=40)
+
+        self.listbox = tk.Listbox(list_frame, width=20, height=40, font=("Arial", 12, "bold"))
         self.listbox.pack(side="left", fill="y")
         self.listbox.bind("<<ListboxSelect>>", self.show_card)
 
@@ -106,7 +106,7 @@ class CardViewer:
         info_scroll = ttk.Scrollbar(info_frame, orient="vertical")
         info_scroll.pack(side="right", fill="y")
 
-        self.info_text = Text(info_frame, wrap="word", height=6, font=("Arial", 12, "bold"),
+        self.info_text = Text(info_frame, wrap="word", height=6, font=("Arial", 14, "bold"),
                               yscrollcommand=info_scroll.set)
         self.info_text.pack(fill="both", expand=True)
         info_scroll.config(command=self.info_text.yview)
@@ -164,6 +164,7 @@ class CardViewer:
         attr_filter = self.attr_var.get()
         race_filter = self.race_var.get()
         self.listbox.delete(0, tk.END)
+        
         for card in self.cards:
             name = card.get("name", "").lower()
             number = card.get("number", "").lower()
@@ -244,7 +245,7 @@ class CardViewer:
             return
         self.load_image(self.current_images[0])
         for i, url in enumerate(self.current_images):
-            btn = ttk.Button(self.image_buttons_frame, text=f"Photo {i+1}", command=lambda u=url: self.load_image(u))
+            btn = ttk.Button(self.image_buttons_frame, text=f"Image {i+1}", command=lambda u=url: self.load_image(u))
             btn.pack(side="left", padx=5)
 
     def load_image(self, url):
